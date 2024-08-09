@@ -1,0 +1,122 @@
+:root{
+    --color-primario: #de610e;
+    --color-secundario: #082ba5;
+    --color-sombras: #282d31;
+    --color-texto: #303234;
+    --color-titulo: #282d31;
+    --color-fondo: #e4e4e4;
+    --color-verde: #08c408;
+    --color-fondito: #9db1f7;
+    --color-cuadro2: #a5a5a5;
+}
+/**/
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Header*/
+
+/*Body*/
+body{
+    background-color: var(--color-primario);
+}
+.contenedor{
+    margin: 80px auto;
+    height: 500px;
+    max-width: 1000px;
+    max-height: 600px;
+
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(9,1fr);
+}
+
+.imgback{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 1/6 ;
+    grid-row: 1/8 ;
+}
+.textpre{
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+    background-color: antiquewhite;
+    box-shadow: 0 0 10px -8px black;
+    grid-column: 6/10;
+    grid-row: 1/8;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    color: (--color-texto);
+}
+.textpre .textpre1{
+    font-size: 40px
+}
+.textpre a{
+    text-decoration: none;
+    color: var(--color-texto);
+}
+.textpre .fa-github{
+    color: black;
+}
+.textpre .fa-linkedin{
+    color: rgb(18, 100, 194);
+}
+.teclist{
+    background-color: var(--color-cuadro2);
+    grid-column: 3/11;
+    grid-row: 7/11;
+    position: relative;
+}
+.imgpack{
+    background-color: var(--color-cuadro2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    top: 30%;
+
+}
+.teclist p{
+    position: absolute;
+    left: 40%;
+    top: -10%;
+    font-size: 25px;
+}
+.imgpack .git{
+    width: 100px;
+    height: 50%;
+    padding-left: 40px;
+}
+.imgpack .fig{
+    width: 40px;
+    height: 50%;
+}
+.imgpack .ht{
+    width: 55px;
+    height: 50%;
+    padding-left: 20px;
+}
+.imgpack .jav{
+    width: 100px;
+    height: 50%;
+    padding-left: 20px;
+}
+.imgpack .css{
+    width: 70px;
+    height: 50%;
+    padding-left: 20px;
+}
+.imgpack .php{
+    width: 130px;
+    height: 50%;
+    padding-left: 20px;
+}
+.imgpack .my{
+    width: 110px;
+    height: 50%;
+    padding-left: 20px;
+}
