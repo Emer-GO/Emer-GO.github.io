@@ -1,0 +1,171 @@
+:root{
+    --color-blanco:rgb(243, 240, 240);
+    --color-gris:rgb(74, 77, 75);
+    --color-principal:#12102b;
+    --color-azul: #0068b7;
+    --color-dorado: #f0d400;
+}
+*{
+    list-style: none;
+}
+body{
+    background-image: url("img/mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+/* HEADER INICIA */
+header {
+    background-color: var(--color-principal);
+    position: fixed;
+    top: 0%;
+    z-index: 1000;
+    width: 100%;
+  }
+  .menu {
+    width: 85%;
+    margin: auto;
+    font-family: "Nunito";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .img-logo {
+    height: 2em;
+    width: 9em;
+  }
+  .btn-menu {
+    display: none;
+  }
+  .enlaces {
+    text-align: right;
+  }
+  .enlaces a {
+    font-family: "Nunito";
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 1em;
+    text-align: center;
+    color: var(--color-blanco);
+  }
+  @media screen and (max-width: 1023px) {
+    header .menu {
+      flex-direction: column;
+    }
+    .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .btn-menu {
+      display: inline-block;
+      color: var(--color-primario);
+      font-size: 1.8em;
+      margin-top: 1em;
+      text-decoration: none;
+    }
+    .enlaces {
+      display: flex;
+      flex-direction: column;
+    }
+    .buscador{
+        margin-bottom: 1em;
+    }
+  }
+
+.buscador{
+    border: 1px solid var(--color-principal);
+    border-radius: .5rem;
+    padding: .2rem;
+    position: relative;
+    font-family: 'Nunito';
+    font-weight: 400;
+}
+
+.busqueda form .okbtn{
+    font-family: 'Nunito';
+    font-weight: 400;
+    color: var(--color-blanco);
+    position: absolute;
+    padding: .2rem;
+    border-radius: .5rem;
+    background-color: var(--color-azul);
+    border: 1px solid var(--color-dorado);
+   
+}
+
+/* HEADER TERMINA */
+/* formulario inicia */
+.formulario{
+  border-radius: 1em;
+  background-color: var(--color-principal);
+  box-shadow: 0 1.5rem 3rem -0.50rem hsla(0, 0%, 1%, 0.25);
+}
+.img-lado{
+  padding: 0%;
+  border-radius: 1em;
+}
+.login-text{
+  font-family: 'Gabarito';
+  color: var(--color-blanco);
+  text-align: center;
+  width: 100%;
+}
+.formulario label{
+  color: var(--color-blanco);
+  font-family: 'Gabarito';
+}
+.formulario .input-ingreso{
+  width: 95%;
+  padding: .5rem;
+  margin: .1rem;
+  border-radius: .8rem;
+  font-family: 'Nunito';
+  margin-bottom: .3em;
+  border: 1px solid var(--color-dorado);
+}
+.formulario .botoncontacto{
+  margin-top: .5em ;
+  width: 95%;
+  padding: .5rem;
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
+  border-radius: .5em;
+}
+.text-2{
+  text-align: center;
+  font-family:'Nunito';
+  font-size: 1em;
+  color: var(--color-gris);
+}
+/* formulario final */
+/* Footer inicia*/
+footer {
+  align-items: center;
+  background-color: var(--color-principal);
+  padding-top: 1em;
+  
+}
+.icon-1 {
+  color: var(--color-blanco);
+  font-size: 3em;
+}
+.titulo-3 {
+  margin-top: 4%;
+  font-weight: 600;
+  font-size: 1em;
+  font-family: "Gabarito";
+  color: var(--color-blanco);
+  margin-bottom: 0%;
+}
+.parrafo-2 {
+  font-family: "Nunito";
+  color: var(--color-blanco);
+  font-size: 12px;
+}
