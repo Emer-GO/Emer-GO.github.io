@@ -1,0 +1,241 @@
+:root{
+    --color-primario: #EC111A;
+    --color-secundario: #082BA5;
+    --color-sombras: #282D31;
+    --color-textos: #53575A;
+    --color-titulos: #282D31;
+    --color-fondo: #FCFCFC;
+}
+main{
+    max-width: 800px;
+    margin: auto;
+    width: 90%;
+    /* padding: 2em 18%; */
+}
+
+/* INICIO DEL MENU */
+header {
+    background-color: var(--color-fondo);
+    position: fixed;
+    top: 0%;
+    z-index: 1000;
+    width: 100%;
+  }
+  .menu {
+    width: 85%;
+    margin: auto;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .img-logo {
+    height: 60px;
+  }
+  .btn-menu {
+    display: none;
+  }
+  .enlaces {
+    text-align: right;
+  }
+  .enlaces a {
+    font-family: "roboto";
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 1em;
+    text-align: center;
+    color: var(--color-texto);
+  }
+  @media screen and (max-width: 1023px) {
+    header .menu {
+      flex-direction: column;
+    }
+    .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .btn-menu {
+      display: inline-block;
+      color: var(--color-primario);
+      font-size: 1.8em;
+      margin-top: 1em;
+      text-decoration: none;
+    }
+    .enlaces {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  /* FINAL DEL MENU */
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 8px var(--color-sombras);
+    padding: 1em;
+    border-radius: 1em;
+    margin: auto;
+}
+
+
+/* INICIO */
+.formulario_grupo-input {
+	position: relative;
+}
+
+/* FIN */
+
+.formulario_input{
+    width: 100%;
+    padding: .5em;
+    border: 2px solid var(--color-primario);
+    transition: all .3s ease-in-out;
+    border-radius: .4em;
+}
+
+.formulario_input:focus{
+    border: 2px solid var(--color-secundario);
+    outline: none;
+    box-shadow: 1px 1px 8px var(--color-secundario);
+}
+
+
+/* INICIO */
+
+.formulario_input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario_input-error-activo {
+	display: block;
+}
+
+
+
+.formulario_validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+
+.formulario_checkbox {
+	margin-right: 10px;
+}
+
+.formulario_grupo-terminos, 
+.formulario_mensaje,
+.formulario_grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario_mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario_mensaje-activo {
+	display: block;
+}
+
+.formulario_mensaje p {
+	margin: 0;
+}
+
+/* FIN */
+
+
+.formulario_grupo-btn-enviar{
+    grid-column: span 2;
+}
+
+
+.formulario_grupo-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* INICIO */
+.formulario_btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: red;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario_btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario_mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario_mensaje-exito-activo {
+	display: block;
+}
+
+
+
+/* FIN */
+
+
+.formulario_grupo-correcto .formulario_validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_label {
+	color: var(--color-primario);
+}
+
+.formulario_grupo-incorrecto .formulario_validacion-estado {
+	color: var(--color-primario);
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_input {
+	border: 3px solid #bb2929;
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+        width: 90%;
+	}
+
+	
+	.formulario_grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario_btn {
+		width: 100%;
+	}
+}
+

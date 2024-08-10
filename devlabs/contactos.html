@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO WEB - SENATI</title>
+    <!-- Enlace de iconos -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+    <!-- Enlace de fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Enlace de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Enlace de nuestro css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Librería  jquery -->
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+<!--INICIO DE MENÚ DE NAVEGACIÓN -->
+    <header id="header">
+        <nav class="menu">
+          <div class="logo">
+           <a href="#">
+             <img src="img/Logo.svg" alt="" class="img-fluid img-logo">
+           </a>
+           <a href="#" class="btn-menu" id="btn-menu">
+             <i class="fa-solid fa-bars"></i>
+           </a>
+          </div>
+          <div class="enlaces" id="enlaces">
+            <a href="index.html">INICIO</a>
+            <a href="#">CURSOS</a>
+            <a href="registro.html">REGISTRO</a>
+            <a href="login.html">LOGIN</a>
+            <a href="matricula.html">MATRICULA</a>
+            <a href="contactos.html">CONTACTO</a>
+          </div>
+        </nav>
+      </header>
+      <br><br><br><br>
+<!--FIN DE MENÚ DE NAVEGACIÓN -->
+<article class="container">
+    <form action="enviar.php" method="post">
+        <section class="row">
+            <section class="col-xs-12 col-sm-12 col-md-6">
+                <img src="img/contacto.jpg" alt="" class="img-fluid">
+            </section>
+            <section class="col-xs-12 col-sm-12 col-md-6">
+                <label>Nombre: </label>
+                <input type="text" maxlength="30" id="" placeholder="Ingrese su nombre" required>
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="Ingrese su email" required>
+                <label>Celular</label>
+                <input type="cel" id="celular" maxlength="9" placeholder="Ingrese su Celular" required>
+                <textarea id="mensaje"></textarea>
+                <input type="submit" class="botoncontacto">
+            </section>
+        </section>
+    </form>
+</article>
+<br><br><br><br><br><br><br><br>
+<!-- INICIO DEL FOOTER -->
+<footer>
+    <article class="container">
+        <section class="row">
+            <section class="col-xs-12 col-sm-12 col-md-1">
+                <h1 class="icon-1"><i class="fas fa-mobile-alt"></i></h1>
+
+            </section >
+            <section class="col-xs-12 col-sm-12 col-md-3">
+                <h1 class="titulo-3">Contacto:</h1>
+                <p class="parrafo-2">+51 939 123 987 <br>
+                    +51 939 123 987 (Whatsapp)</p>
+
+            </section>
+            <section class="col-xs-12 col-sm-12 col-md-1">
+                <h1 class="icon-1"><i class="fas fa-envelope"></i></i></h1>
+
+            </section>
+            <section class="col-xs-12 col-sm-12 col-md-3">
+                <h1 class="titulo-3">E-Mail:</h1>
+                <p class="parrafo-2">devlab.pe@gmail.com</p>
+
+            </section>
+            <section class="col-xs-12 col-sm-12 col-md-1">
+                <h1 class="icon-1"><i class="fas fa-map-marker-alt"></i></h1>
+            </section>
+            <section class="col-xs-12 col-sm-12 col-md-3">
+                <h1 class="titulo-3">Dirección:</h1>
+                <p class="parrafo-2">Lima - Perú</p>
+
+            </section>
+            <br><br>
+
+        </section>
+    </article>
+    <section class="total">
+        <a href="#" class="copyright-1">DEVLAB SOLUCIONES INFORMATICAS SAC @2022 - 
+            Todos los derechos reservados</a>                
+        <a href="#" class="copyright-2">Desarrollado por:</a>
+        <a href="#" class="copyright-3">Emerson Rojas V.</a>
+    </section>
+</footer>
+<!-- FINAL DEL FOOTER -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/headroom.min.js"></script>
+<script src="js/menu-flex.js"></script>
+</body>
