@@ -12,6 +12,7 @@ body{
     margin: 0;
 }
 /*Header*/
+
 header{
 display: flex;
 justify-content: space-between;
@@ -60,7 +61,6 @@ color: var(--color-texto);
     height: 500px;
     max-width: 1000px;
     max-height: 600px;
-
     display: grid;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(9,1fr);
