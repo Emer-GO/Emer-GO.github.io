@@ -1,26 +1,60 @@
 :root{
-    --color-primario: #de610e;
-    --color-secundario: #082ba5;
-    --color-sombras: #282d31;
-    --color-texto: #303234;
-    --color-titulo: #282d31;
-    --color-fondo: #e4e4e4;
-    --color-verde: #08c408;
-    --color-fondito: #9db1f7;
-    --color-cuadro2: #a5a5a5;
+--color-primario:#44496B;
+--color-secundario:#2E4057;
+--color-sombras: #525E9A;
+--color-texto1:#000527;
+--color-texto2:#F0EEFE;
 }
-/**/
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*Header*/
-
 /*Body*/
 body{
     background-color: var(--color-primario);
+    font-family: sans-serif;
+    margin: 0;
 }
+/*Header*/
+header{
+display: flex;
+justify-content: space-between;
+min-height: 70px;
+background-color: var(--color-secundario);
+align-items: center;
+padding: 5px;
+}
+header a{
+text-decoration: none;
+color: var(--color-texto);
+}
+    
+    .logo{
+    display: flex;
+    align-items: center;
+    }
+    
+    .logo img{
+        height: 50px;
+        margin-left: 100px;
+    }
+    nav a{
+        font-weight: 600;
+        padding-right: 100px;
+    }
+    nav a:hover{
+        color: var(--color-cuadro2);
+    }
+    @media (max-width:700px){
+        header{
+            flex-direction: column;
+        }
+        .logo{
+        padding-right: 100px;
+        }
+        nav{
+            padding: 10px 0px;
+        }
+        nav a{
+            padding-right: 10px;
+        }
+    }
 .contenedor{
     margin: 80px auto;
     height: 500px;
