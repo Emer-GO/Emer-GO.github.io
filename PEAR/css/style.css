@@ -4,6 +4,8 @@
 --color-sombras: #525E9A;
 --color-texto1:#000527;
 --color-texto2:#F0EEFE;
+--color-texto3:#e0e0e0;
+--color-acento: #595959;
 }
 /*Body*/
 body{
@@ -12,7 +14,6 @@ body{
     margin: 0;
 }
 /*Header*/
-
 header{
 display: flex;
 justify-content: space-between;
@@ -26,128 +27,124 @@ text-decoration: none;
 color: var(--color-texto);
 }
     
-    .logo{
-    display: flex;
-    align-items: center;
-    }
+.logo{
+display: flex;
+align-items: center;
+}
     
-    .logo img{
-        height: 50px;
-        margin-left: 100px;
-    }
-    nav a{
-        font-weight: 600;
-        padding-right: 100px;
-    }
-    nav a:hover{
-        color: var(--color-cuadro2);
-    }
-    @media (max-width:700px){
-        header{
-            flex-direction: column;
-        }
-        .logo{
-        padding-right: 100px;
-        }
-        nav{
-            padding: 10px 0px;
-        }
-        nav a{
-            padding-right: 10px;
-        }
-    }
-.contenedor{
-    margin: 80px auto;
-    height: 500px;
-    max-width: 1000px;
-    max-height: 600px;
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(9,1fr);
+.logo img{
+height: 50px;
+margin-left: 100px;
+}
+.logo h2{
+    color: var(--color-texto2);
+}
+.logo:hover{
+    height: 60px;
+    color: var(--color-texto2);
+}
+.logo img:hover{
+    height: 60px;
 }
 
+nav a{
+font-weight: 600;
+padding-right: 100px;
+color: var(--color-texto2);
+}
+
+nav a:hover{
+font-weight: 800;
+}
+
+@media (max-width:700px){
+header{
+flex-direction: column;
+}
+.logo{
+padding-right: 100px;
+}
+nav{
+padding: 10px 0px;
+}
+nav a{
+padding-right: 10px;
+}
+}
+
+.contenedor{
+display: grid;
+background-color: var(--color-acento);
+margin: 30px 250px;
+height: 400px;
+grid-template-columns: 1fr 1fr;
+}
 .imgback{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    grid-column: 1/6 ;
-    grid-row: 1/8 ;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 .textpre{
-    border-right: 5px solid black;
-    border-top: 5px solid black;
-    background-color: antiquewhite;
-    box-shadow: 0 0 10px -8px black;
-    grid-column: 6/10;
-    grid-row: 1/8;
-    padding-left: 10%;
-    padding-right: 10%;
+    background-color: var(--color-acento);
+    margin: 1px 30px;
+    border-radius: 100px;
+}
+.textpre h2{
+    color: var(--color-texto2);
     text-align: center;
-    color: (--color-texto);
+    font-size: 40px;
 }
-.textpre .textpre1{
-    font-size: 40px
+.textpre p{
+    color: var(--color-texto2);
+    text-align: center;
+    font-size: 20px;
 }
-.textpre a{
+.textpre p a{
+    color: var(--color-texto3);
     text-decoration: none;
-    color: var(--color-texto);
+    font-weight: 600;
 }
-.textpre .fa-github{
-    color: black;
+.enlaces{
+    text-align: center;
+    margin-top: 50px;
 }
-.textpre .fa-linkedin{
-    color: rgb(18, 100, 194);
-}
-.teclist{
-    background-color: var(--color-cuadro2);
-    grid-column: 3/11;
-    grid-row: 7/11;
-    position: relative;
-}
-.imgpack{
-    background-color: var(--color-cuadro2);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: absolute;
-    z-index: 100;
-    top: 30%;
+.enlaces a{
+    text-decoration: none;
+    color: var(--color-texto2);
+    font-weight: 600;
 
 }
-.teclist p{
-    position: absolute;
-    left: 40%;
-    top: -10%;
-    font-size: 25px;
+a .fa-github{
+    color: rgb(0, 0, 0);
 }
-.imgpack .git{
-    width: 100px;
-    height: 50%;
-    padding-left: 40px;
+a .fa-linkedin{
+    color: rgb(52, 154, 255);
 }
-.imgpack .fig{
-    width: 40px;
-    height: 50%;
+
+@media(max-width:1200px) {
+    .contenedor{
+    margin: 20px 70px;
+    }
+    .textpre p{
+    font-size: 20px;
+    }
+    .enlaces{
+        margin-top: 10px;
+        }
+
 }
-.imgpack .ht{
-    width: 55px;
-    height: 50%;
-    padding-left: 20px;
-}
-.imgpack .jav{
-    width: 100px;
-    height: 50%;
-    padding-left: 20px;
-}
-.imgpack .css{
-    width: 70px;
-    height: 50%;
-    padding-left: 20px;
-}
-.imgpack .php{
-    width: 130px;
-    height: 50%;
-    padding-left: 20px;
+@media (max-width:800px){
+    .contenedor{
+        margin: 30px 10px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .textpre p{
+    font-size: 18px;
+    }
+    .enlaces{
+    margin-top: 0;
+    }
 }
 .imgpack .my{
     width: 110px;
